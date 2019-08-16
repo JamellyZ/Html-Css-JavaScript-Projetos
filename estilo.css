@@ -1,0 +1,64 @@
+body{
+    background: rgb(55, 179, 179);
+    font: normal 15pt arial;
+}
+
+header{
+    background:rgba(255, 255, 255, 0.507);
+    text-align: center;
+    width: 700px;
+    margin-left: 300px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452); /*5px deslocmento lateral, deslocamento vertical e 10px de espalhamento.*/
+
+}
+
+h2{
+    text-align: center;
+    margin: 60px 0px 20px 0px;
+
+}
+
+img{
+    width: 150px;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452); /*5px deslocmento lateral, deslocamento vertical e 10px de espalhamento.*/
+
+}
+
+img#foto{
+    margin: 70px 10px 0px 150px;
+    width: 200px;
+}
+
+img#resultado{
+    width: 200px;
+    margin: 100px 0px 0px 29.5px;
+}
+div{
+    width: 520px;
+    height: 400px;
+}
+
+div#jogo{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+}
+
+.escolha{
+    background: rgba(176, 197, 126, 0.199);
+    float: left;
+    border-radius: 20px;
+}
+
+div#resposta{
+    background: rgba(176, 197, 126, 0.199);
+    float: right;
+    border-radius: 20px;
+}
+
+.elementos{
+    transition: all 0.1s;
+}

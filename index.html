@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos jogar pedra, papel ou tesoura</h1>
+    </header>
+
+<div id ="jogo">
+        <img src="img-centro.png" alt="resultado" id="resultado">
+    <div class="escolha">
+        <h2>ESCOLHA UM PARA JOGAR</h2>
+        <img src="pedra.png" alt="pedra" class="elementos" id="pedra" onclick="ativarPedra()" onmouseover="javascript: this.style.width = '160px'" onmouseout="javascript: this.style.width = '150px'">
+        <img src="papel.png" alt="papel" class="elementos" id="papel" onclick="ativarPapel()" onmouseover="javascript: this.style.width = '160px'" onmouseout="javascript: this.style.width = '150px'"> 
+        <img src="tesoura.png" alt="tesoura" class="elementos" id="tesoura" onclick="ativarTesoura()" onmouseover="javascript: this.style.width = '160px'" onmouseout="javascript: this.style.width = '150px'">
+    </div>
+
+    <div id="resposta">
+        <img src="oponente.png" alt="foto" id="foto">
+    </div>
+    
+<script src="script-jogo.js"></script>
+
+
+    
+</body>
+</html>
