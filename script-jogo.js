@@ -1,11 +1,11 @@
 function aleatorio(){
-    var dados = ["","p", "papel", "tesoura"]
+    var dados = ["","pedra", "papel", "tesoura"]
     let randomInt = dados[Math.ceil(Math.random() * (3))]    
     return randomInt
 }
 
 function limpar(){
-    var p = document.getElementById("p")
+    var p = document.getElementById("pedra")
     var papel = document.getElementById("papel")
     var tesoura = document.getElementById("tesoura")
     p.innerHTML = p.setAttribute("src", "p.png")
@@ -13,6 +13,7 @@ function limpar(){
     tesoura.innerHTML = tesoura.setAttribute("src", "tesoura.png")
 }
 
+//A partir da escolha do usuario gera a o resultado aqui
 function opcoes(empate,derrota){
     var escolha = document.getElementById(empate)
     var resultado = document.getElementById("resultado")
@@ -38,8 +39,8 @@ function opcoes(empate,derrota){
     }
 }
 
-function ativarp(){
-    opcoes("p", "papel")
+function ativarPedra(){
+    opcoes("pedra", "papel")
 }
 
 function ativarPapel(){
@@ -47,5 +48,5 @@ function ativarPapel(){
 }
 
 function ativarTesoura(){
-    opcoes("tesoura", "p")
+    opcoes("tesoura", "pedra")
 }
