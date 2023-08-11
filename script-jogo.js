@@ -1,14 +1,14 @@
 function aleatorio(){
-    var dados = ["","pedra", "papel", "tesoura"]
+    var dados = ["","p", "papel", "tesoura"]
     let randomInt = dados[Math.ceil(Math.random() * (3))]    
     return randomInt
 }
 
 function limpar(){
-    var p = document.getElementById("pedra")
+    var p = document.getElementById("p")
     var papel = document.getElementById("papel")
     var tesoura = document.getElementById("tesoura")
-    pedra.innerHTML = pedra.setAttribute("src", "pedra.png")
+    p.innerHTML = p.setAttribute("src", "p.png")
     papel.innerHTML = papel.setAttribute("src", "papel.png")
     tesoura.innerHTML = tesoura.setAttribute("src", "tesoura.png")
 }
@@ -38,8 +38,8 @@ function opcoes(empate,derrota){
     }
 }
 
-function ativarPedra(){
-    opcoes("pedra", "papel")
+function ativarp(){
+    opcoes("p", "papel")
 }
 
 function ativarPapel(){
@@ -47,5 +47,5 @@ function ativarPapel(){
 }
 
 function ativarTesoura(){
-    opcoes("tesoura", "pedra")
+    opcoes("tesoura", "p")
 }
