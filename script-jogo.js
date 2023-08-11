@@ -1,12 +1,11 @@
 function aleatorio(){
     var dados = ["","pedra", "papel", "tesoura"]
-    random = dados[Math.ceil(Math.random() * (3))]    
+    let randomInt = dados[Math.ceil(Math.random() * (3))]    
     return random
-
 }
 
 function limpar(){
-    var pedra = document.getElementById("pedra")
+    var p = document.getElementById("pedra")
     var papel = document.getElementById("papel")
     var tesoura = document.getElementById("tesoura")
     pedra.innerHTML = pedra.setAttribute("src", "pedra.png")
