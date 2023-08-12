@@ -5,12 +5,12 @@ function aleatorio(){
 }
 
 function limpar(){
-    var p = document.getElementById("pedra")
-    var papel = document.getElementById("papel")
-    var tesoura = document.getElementById("tesoura")
-    p.innerHTML = p.setAttribute("src", "p.png")
-    papel.innerHTML = papel.setAttribute("src", "papel.png")
-    tesoura.innerHTML = tesoura.setAttribute("src", "tesoura.png")
+    var pe = document.getElementById("pedra")
+    var pa = document.getElementById("papel")
+    var te = document.getElementById("tesoura")
+    pedra.innerHTML = pe.setAttribute("src", "p.png")
+    papel.innerHTML = pa.setAttribute("src", "papel.png")
+    tesoura.innerHTML = te.setAttribute("src", "tesoura.png")
 }
 
 //A partir da escolha do usuario gera a o resultado aqui
